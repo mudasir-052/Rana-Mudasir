@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FoodieHub | Orders</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <h2>🍔 FoodieHub</h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="orders.html">Orders</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="search-container">
+      <input type="text" id="searchBar" placeholder="Search for food...">
+      <button onclick="searchFood()">Search</button>
+      <p id="searchError" class="error-message"></p>
+    </div>
+  </header>
+
+  <!-- Orders Section -->
+  <section class="orders">
+    <h1>Your Orders</h1>
+    <div id="orderList" class="order-list">
+      <!-- Orders will be loaded from localStorage -->
+    </div>
+    <button onclick="clearOrders()">Clear All Orders</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-media">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+    <a href="#">Privacy Policy</a>
+    <p>Your favorite meals, delivered fast!</p>
+  </footer>
+
+</body>
+</html>
