@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FoodieHub | Menu</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <h2>🍔 FoodieHub</h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="orders.html">Orders</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="search-container">
+      <input type="text" id="searchBar" placeholder="Search for food...">
+      <button onclick="searchFood()">Search</button>
+      <p id="searchError" class="error-message"></p>
+    </div>
+  </header>
+
+  <!-- Menu Section -->
+  <section class="menu">
+    <h1>Our Menu</h1>
+    <div class="menu-items">
+      <div class="item">
+        <img src="images/cheezypizza.jfif" alt="Pizza">
+        <h3>Cheesy Pizza</h3>
+        <p>PKR 1200</p>
+        <button onclick="addToCart('Cheesy Pizza', 1200)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="images/doubleburger.jfif" alt="Burger">
+        <h3>Double Burger</h3>
+        <p>PKR 500</p>
+        <button onclick="addToCart('Double Burger', 500)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="images/italianpasta.jfif" alt="Pasta">
+        <h3>Italian Pasta</h3>
+        <p>PKR 700</p>
+        <button onclick="addToCart('Italian Pasta', 700)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="images/greensalad.jfif" alt="Salad">
+        <h3>Green Salad</h3>
+        <p>PKR 300</p>
+        <button onclick="addToCart('Green Salad', 300)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Chicken Biryani">
+        <h3>Chicken Biryani</h3>
+        <p>PKR 250</p>
+        <button onclick="addToCart('Chicken Biryani', 250)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="https://images.pexels.com/photos/1639564/pexels-photo-1639564.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Zinger Burger">
+        <h3>Zinger Burger</h3>
+        <p>PKR 450</p>
+        <button onclick="addToCart('Zinger Burger', 450)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="https://images.pexels.com/photos/374885/pexels-photo-374885.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Chicken Shawarma">
+        <h3>Chicken Shawarma</h3>
+        <p>PKR 300</p>
+        <button onclick="addToCart('Chicken Shawarma', 300)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg?auto=compress&cs=tinysrgb&w=400" alt="French Fries">
+        <h3>French Fries</h3>
+        <p>PKR 150</p>
+        <button onclick="addToCart('French Fries', 150)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="https://images.pexels.com/photos/1109197/pexels-photo-1109197.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Chicken Nuggets">
+        <h3>Chicken Nuggets</h3>
+        <p>PKR 350</p>
+        <button onclick="addToCart('Chicken Nuggets', 350)">Add to Cart</button>
+      </div>
+      <div class="item">
+        <img src="https://images.pexels.com/photos/2067436/pexels-photo-2067436.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Paratha Roll">
+        <h3>Paratha Roll</h3>
+        <p>PKR 120</p>
+        <button onclick="addToCart('Paratha Roll', 120)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-media">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+    <a href="#">Privacy Policy</a>
+    <p>Your favorite meals, delivered fast!</p>
+  </footer>
+
+</body>
+</html>
